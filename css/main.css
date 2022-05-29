@@ -241,6 +241,22 @@ body {
   padding-right: 15px;
 }
 
+.benefits__item--antenna::before {
+  background-image: url(../../images/icon/icon_benefits/antenna.svg);
+}
+
+.benefits__item--clock::before {
+  background-image: url(../../images/icon/icon_benefits/clock.svg);
+}
+
+.benefits__item--diagram::before {
+  background-image: url(../../images/icon/icon_benefits/diagram.svg);
+}
+
+.benefits__item--astronaut::before {
+  background-image: url(../../images/icon/icon_benefits/astronaut.svg);
+}
+
 .benefits__item::before {
   display: block;
   content: '';
@@ -252,20 +268,12 @@ body {
   background-color: #f5f4fa;
 }
 
-.benefits__item-antenna::before {
-  background-image: url(../../images/icon/icon_benefits/antenna.svg);
+.benefits__item {
+  margin-bottom: 30px;
 }
 
-.benefits__item-clock::before {
-  background-image: url(../../images/icon/icon_benefits/clock.svg);
-}
-
-.benefits__item-diagram::before {
-  background-image: url(../../images/icon/icon_benefits/diagram.svg);
-}
-
-.benefits__item-astronaut::before {
-  background-image: url(../../images/icon/icon_benefits/astronaut.svg);
+.benefits__item:not(:first-child) {
+  margin-left: 30px;
 }
 
 .benefits__list {
@@ -276,5 +284,46 @@ body {
       -ms-flex-align: center;
           align-items: center;
   list-style: none;
+}
+
+.benefits__title {
+  color: #212121;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.benefits__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.7;
+}
+
+.benefits__title--visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.work__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  padding-top: 0;
+  color: var(--prymery-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */
