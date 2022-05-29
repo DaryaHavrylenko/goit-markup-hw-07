@@ -1,0 +1,69 @@
+.hero {
+  background-color: $prymery-text-color;
+  text-align: center;
+  padding-bottom: 200px;
+  padding-top: 200px;
+
+  &--overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(../images/herobg/Img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}
+.hero__container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.hero__title {
+  margin: auto;
+  margin-bottom: 30px;
+
+  color: $white-color;
+
+  width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+}
+.hero__button {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  color: $black-color;
+  background-color: $button-bgc;
+
+  cursor: pointer;
+
+  font-family: inherit;
+  transition: color 250ms $timing-function, background-color 250ms $timing-function,
+    box-shadow 250ms $timing-function;
+
+  &--prymery {
+    padding: 10px 32px;
+    min-width: 200px;
+
+    color: $white-color;
+    background-color: $accent-color;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    text-align: center;
+
+    transition: background-color 250ms $timing-function;
+  }
+}
