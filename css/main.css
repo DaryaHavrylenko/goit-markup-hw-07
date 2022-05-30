@@ -275,19 +275,19 @@ body {
 }
 
 .benefits__item--antenna::before {
-  background-image: url(../../images/icon/icon_benefits/antenna.svg);
+  background-image: url(../images/icon/icon_benefits/antenna.svg);
 }
 
 .benefits__item--clock::before {
-  background-image: url(../../images/icon/icon_benefits/clock.svg);
+  background-image: url(../images/icon/icon_benefits/clock.svg);
 }
 
 .benefits__item--diagram::before {
-  background-image: url(../../images/icon/icon_benefits/diagram.svg);
+  background-image: url(../images/icon/icon_benefits/diagram.svg);
 }
 
 .benefits__item--astronaut::before {
-  background-image: url(../../images/icon/icon_benefits/astronaut.svg);
+  background-image: url(../images/icon/icon_benefits/astronaut.svg);
 }
 
 .benefits__item::before {
