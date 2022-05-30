@@ -1,13 +1,8 @@
 .benefits {
-  padding-bottom: 94px;
-  padding-top: 94px;
+@extend %section;
 }
 .benefits__container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+@extend %container;
 }
 
 .benefits__item--antenna::before {
@@ -40,11 +35,13 @@
 }
 
 .benefits__list {
+  @extend %list;
   display: flex;
   align-items: center;
-  list-style: none;
+  
 }
 .benefits__title {
+  
   color: $prymery-text-color;
   margin-top: 0;
   margin-bottom: 10px;
@@ -53,6 +50,9 @@
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+ &--hidden {
+   @extend %visually-hidden;
+ }
 }
 .benefits__text {
   margin-top: 0;
@@ -60,15 +60,6 @@
 
   line-height: 1.7;
 }
-.benefits__title--visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
+
+
+

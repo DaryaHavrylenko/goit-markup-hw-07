@@ -1,14 +1,11 @@
 .command {
+@extend %section;
   background: #f5f4fa;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  
 }
 .command__container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+
+@extend %container;
 }
 .command__title {
   margin-top: 0;
@@ -23,11 +20,10 @@
   text-align: center;
 }
 .command__list {
+  @extend %list;
   display: flex;
   //   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
 }
 .card-contents {
   text-align: center;
