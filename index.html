@@ -533,7 +533,62 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <form class="modal__form">
+          <p class="modal__text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="modal__form-fields">
+            <label class="modal__form-label" for="name">Имя</label>
+            <input class="modal__form-input" type="text" name="name" id="name" />
+            <label class="modal__form-icon" for="name">
+              <svg class="modal__form-svg"><use href="./images/icons.svg#person"></use></svg>
+            </label>
+          </div>
+          <div class="modal__form-fields">
+            <label class="modal__form-label" for="tel">Телефон</label>
+            <input class="modal__form-input" type="tel" name="tel" id="tel" />
+            <label class="modal__form-icon"
+              ><svg class="modal__form-svg"><use href="./images/icons.svg#phone"></use></svg>
+            </label>
+          </div>
+          <div class="modal__form-fields">
+            <label class="modal__form-label" for="mail">Почта</label>
+            <input class="modal__form-input" type="email" name="mail" id="mail" />
+            <label class="modal__form-icon"
+              ><svg class="modal__form-svg"><use href="./images/icons.svg#email"></use></svg>
+            </label>
+          </div>
+          <div class="modal__textarea-field">
+            <label class="modal__form-label" for="comment">Комментарий</label>
+            <textarea
+              class="textarea"
+              name="comment"
+              id="comment"
+              rows="8"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="modal__form-fields">
+            <label class="modal__checkbox-label">
+              <input class="modal__checkbox" type="checkbox" name="check" /><span
+                class="modal__check-icon"
+              ></span>
+              <span
+                >Соглашаюсь с рассылкой и принимаю
+                <span href="" class="modal__conditions">Условия договора</span>
+              </span>
+            </label>
+          </div>
+          <button class="modal__submit" type="submit">Отправить</button>
+        </form>
 
+        <button class="close" data-modal-close>
+          <svg class="icon-close" width="18px" height="18px">
+            <use href="./images/icons.svg#close3"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
