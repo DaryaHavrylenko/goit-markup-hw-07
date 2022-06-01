@@ -17,7 +17,7 @@
   text-align: center;
 }
 .clients__list {
-  @extend %section;
+  @extend %list;
   display: flex;
   justify-content: center;
 }
